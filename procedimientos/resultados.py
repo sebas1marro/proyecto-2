@@ -2,7 +2,7 @@ from mostrar_datos.carga_datos import carga_dic, export_dic
 
 import numpy as np
 
-
+#procesa los datos con otroas funciones y da la informacion de respuesta
 def result(cedula, ruta_encuesta):
     encuestados = carga_dic(ruta_encuesta)
     lista_num = encuestados[cedula]['respuestas']
@@ -13,7 +13,7 @@ def result(cedula, ruta_encuesta):
     export_dic(ruta_encuesta, encuestados)
 
 
-
+#recibe las opciones y da respuesta y sugerencias segun categoria a la que pertenece
 def print_categoria(suma):
     if suma <= 70:
         print('Usted pertenece a la categoria: ARTISTA')
@@ -70,6 +70,7 @@ def print_compatibilidad(suma):
     catalogo=[artista,sociales,investigador,realista,emprendedor,convencional]
     for lo in range(26):
         print(l[lo]) 
+    #seleccion y compatibilidad
     print("escoja tres de las profesiones mostradas y escribala en minusculas ")
     e1=input("ingrese su primera opcion: ")
     while e1 not in l:
@@ -107,6 +108,7 @@ def print_compatibilidad(suma):
         print("la tercera opcion es compatible")
     else:
         print("la tercera opcion no es compatible")
+    #sugerencias compatibles
     en=input("para ver las sugerencias presione enter----->")
     enter=""
     if enter==en:
