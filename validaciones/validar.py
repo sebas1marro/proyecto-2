@@ -1,3 +1,5 @@
+#   Funciones que validan la respuesta ingresada, si es incorrecta devuelve error hasta que 
+#   se cumpla
 def val_num(mensaje):
     numero = input(mensaje)
     while not numero.isnumeric():
@@ -5,7 +7,7 @@ def val_num(mensaje):
         numero = input(mensaje)
     return int(numero)
 
-
+#valida el genero ingresado
 def val_gen(mensaje):
     numero = input(mensaje)
     while numero != '0' and numero != '1':
@@ -13,7 +15,7 @@ def val_gen(mensaje):
         numero = input(mensaje)
     return int(numero)
 
-
+#valida el nombre
 def val_nombre(mensaje):
     nombre = input(mensaje)
     while nombre.isnumeric():
@@ -21,7 +23,7 @@ def val_nombre(mensaje):
         nombre = input(mensaje)
     return nombre
 
-
+#valida l identificacion 
 def val_cedula(mensaje):
     cedula = input(mensaje)
     while not cedula.isnumeric():
@@ -29,7 +31,7 @@ def val_cedula(mensaje):
         cedula = input(mensaje)
     return cedula
 
-
+#distingue si debe continuar o parar
 def val_opcion(mensaje):
     opci = input(mensaje)
     while opci != '' and opci != '0':
@@ -37,7 +39,7 @@ def val_opcion(mensaje):
         opci = input(mensaje)
     return opci
 
-
+#   El programa distingue entre minúsculas y mayúsculas.
 def val_resp(mensaje):
     resp = input(mensaje)
     respuestas = ['a', 'b', 'c', 'A', 'B', 'C']
