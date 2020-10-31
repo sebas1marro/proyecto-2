@@ -2,7 +2,10 @@ from procedimientos.preguntas import preguntar, llenar_datos
 from procedimientos.resultados import result
 from validaciones.validar import val_opcion
 
-
+#   El programa empieza pidiendole al usuario datos personales tales como:
+#   nombre. cedula. edad. genero (1 masculino, 0 femenino) 
+#   Del módulo preguntas, la ruta almacenará los datos ingresados en la primera parte
+#   y del archivo de las preguntas tomará cada pregunta con sus respectivas respuestas(ver preguntas) 
 def main():
     """
     Función principal
@@ -20,3 +23,6 @@ def main():
 
 
 main()
+
+
+
