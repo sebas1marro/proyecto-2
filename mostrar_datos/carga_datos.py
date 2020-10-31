@@ -1,6 +1,6 @@
 import json
 
-
+#leer los archivos con informacion que estan guardados y los trae al programa 
 def carga_dic(ruta: str):
     archivo = open(ruta, "r")
     datos = json.loads(archivo.read())
