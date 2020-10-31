@@ -1,7 +1,7 @@
 from mostrar_datos.carga_datos import carga_dic, export_dic
 from validaciones.validar import val_num, val_gen, val_nombre, val_cedula, val_resp
 
-
+#toma los datos y los guarda
 def llenar_datos(ruta_encuesta):
     encuestados = carga_dic(ruta_encuesta)
     datos = dict()
@@ -15,7 +15,7 @@ def llenar_datos(ruta_encuesta):
     export_dic(ruta_encuesta, encuestados)
     return cedula
 
-
+#asigna valores a la respuesta para hacer la suma 
 def resp_num(respuesta):
     if respuesta == 'a' or respuesta == 'A':
         return 1
@@ -24,7 +24,7 @@ def resp_num(respuesta):
     else:
         return 3
 
-
+#preguntas y opciones
 def preguntar(ruta_encuesta, ruta_preguntas, cedula):
     encuestados = carga_dic(ruta_encuesta)
     preguntas = carga_dic(ruta_preguntas)
