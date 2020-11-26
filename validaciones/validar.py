@@ -5,7 +5,7 @@ def val_num(mensaje):
     while not numero.isnumeric():
         print('Debe ser un numero entero')
         numero = input(mensaje)
-    return int(numero)
+    return str(numero)
 
 #valida el genero ingresado
 def val_gen(mensaje):
@@ -34,7 +34,7 @@ def val_cedula(mensaje):
 #distingue si debe continuar o parar
 def val_opcion(mensaje):
     opci = input(mensaje)
-    while opci != '' and opci != '0':
+    while opci != '' and opci != '0' and opci!= '1':
         print('\nIngrese una opcion correcta\n')
         opci = input(mensaje)
     return opci
