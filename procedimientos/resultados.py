@@ -1,5 +1,6 @@
 from mostrar_datos.carga_datos import carga_dic, export_dic
-#se necesita instalar tabulate, pegue el siguiente link en la terminal: conda install -c conda-forge tabulate
+#se necesita instalar tabulate, si no lo tiene pegue el siguiente link en la terminal: conda install -c conda-forge tabulate
+print("se necesita instalar tabulate, si no lo tiene pegue el siguiente link en la terminal: conda install -c conda-forge tabulate")
 from tabulate import tabulate
 import numpy as np
 
