@@ -2,6 +2,7 @@ from procedimientos.preguntas import preguntar, llenar_datos
 from procedimientos.resultados import result
 from validaciones.validar import val_opcion
 import pandas as pd
+#se necesita instalar tabulate, si no lo tiene pegue el siguiente link en su terminal: conda install -c conda-forge tabulate
 
 #   El programa empieza pidiendole al usuario datos personales tales como:
 #   nombre. cedula. edad. genero (1 masculino, 0 femenino) 
@@ -13,6 +14,7 @@ def main():
     """
     ruta = "./datos/datos.json"
     ruta_preguntas = "./datos/respuestas.json"
+    print("\n Se necesita instalar tabulate, si no lo tiene pegue el siguiente link en su terminal: conda install -c conda-forge tabulate")    
     print('\n\n\t\tTest Vocacional\n\n')
     opcion = val_opcion('Presione enter para empezar con la encuesta 0 de lo contrario --->')
     while opcion != '0':
