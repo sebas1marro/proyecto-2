@@ -24,7 +24,7 @@ def llenar_datos(ruta_encuesta):
     info.write(datos['edad'])
     info.write(",")  
     info.write(str(g))
-    info.write("\n")           
+    info.write(",")           
     info.close()    
     export_dic(ruta_encuesta, encuestados)
     return cedula
