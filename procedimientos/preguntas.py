@@ -10,8 +10,12 @@ def llenar_datos(ruta_encuesta):
     datos['nombre'] = val_nombre('\tIngrese su nombre: ')
     datos['edad'] = val_num('\tIngrese su edad: ')
     datos['genero'] = val_gen('\tIngrese su genero (1: masculino, 0: femenino): ')
-    datos['respuestas'] = []
+    datos['respuestas'] = []       
     encuestados[cedula] = datos
+    if(datos['genero']==0):
+        g="Femenino"
+    else:
+        g="Masculino"
     info=open("datos voc.csv","a")
     info.write(cedula)
     info.write(",")
@@ -19,7 +23,7 @@ def llenar_datos(ruta_encuesta):
     info.write(",")  
     info.write(datos['edad'])
     info.write(",")  
-    info.write(str(datos['genero']))
+    info.write(str(g))
     info.write("\n")           
     info.close()    
     export_dic(ruta_encuesta, encuestados)
