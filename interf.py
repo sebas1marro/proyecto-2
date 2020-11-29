@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from tkinter import *
-from dat import carga_dic, export_dic
+from mostrar_datos.carga_datos import carga_dic, export_dic
 import numpy as np
 from tabulate import tabulate
 import pandas as pd
